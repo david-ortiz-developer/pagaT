@@ -7,16 +7,19 @@
 
 import Foundation
 class BanksListPresenter: BanksListPresenterProtocol {
-    func listBanks() {
-        self.interactor?.loadBanks { result in
-            if let banks = result {
-                
-            }
-                
-        }
-    }
-    
     var interactor: BanksListInteractorProtocol?
     var router: BanksListRouterProtocol?
     var view: BanksListViewControllerProtocol?
+    var banks: BankObjects?
+    
+    func listBanks() {
+        self.interactor?.loadBanks { result in
+            if let banks = result {
+                self.banks = banks
+                DispatchQueue.main.async {
+                    self.view?.reloadTable()
+                }
+            }
+        }
+    }
 }

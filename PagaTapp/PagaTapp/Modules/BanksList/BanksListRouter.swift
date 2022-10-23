@@ -8,7 +8,7 @@
 import UIKit
 
 class BanksListRouter: BanksListRouterProtocol {
-    static func createBanksistView() -> BanksListViewController {
+    static func createBanksListView() -> BanksListViewController {
         let view = mainstoryboard.instantiateViewController(withIdentifier: "BanksListView") as! BanksListViewController
         let presenter = BanksListPresenter()
         let interactor = BanksListInteractor()
