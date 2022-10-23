@@ -121,10 +121,11 @@
 		6205E9642904CED400930F16 /* PagaTapp */ = {
 			isa = PBXGroup;
 			children = (
-				6205E9BA2904E8E500930F16 /* Resurces */,
+				6205E9732904CED600930F16 /* Info.plist */,
 				6205E9B92904E8C300930F16 /* App */,
 				6205E9B42904E7F500930F16 /* Entities */,
 				6205E9B12904E77600930F16 /* Modules */,
+				6205E9BA2904E8E500930F16 /* Resurces */,
 			);
 			path = PagaTapp;
 			sourceTree = "<group>";
@@ -185,7 +186,6 @@
 		6205E9B92904E8C300930F16 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				6205E9732904CED600930F16 /* Info.plist */,
 				6205E9702904CED600930F16 /* LaunchScreen.storyboard */,
 				6205E96B2904CED400930F16 /* Main.storyboard */,
 				6205E9652904CED400930F16 /* AppDelegate.swift */,

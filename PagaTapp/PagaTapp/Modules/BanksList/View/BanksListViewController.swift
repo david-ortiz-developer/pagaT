@@ -14,7 +14,7 @@ class BanksListViewController: UIViewController, BanksListViewControllerProtocol
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.presenter?.listBanks()
         // Do any additional setup after loading the view.
     }
     

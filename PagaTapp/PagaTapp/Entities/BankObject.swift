@@ -6,9 +6,10 @@
 //
 
 import Foundation
-struct BankObject {
+struct BankObject: Decodable {
     var bankName: String
     var description: String
     var age: Int
     var url: String
 }
+typealias BankObjects = [BankObject]
