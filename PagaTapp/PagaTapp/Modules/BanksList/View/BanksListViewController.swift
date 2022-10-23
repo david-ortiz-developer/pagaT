@@ -14,6 +14,10 @@ class BanksListViewController: UIViewController, BanksListViewControllerProtocol
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.configureUI()
+        self.presenter?.listBanks()
+    }
+    func configureUI(){
         self.title = "Banks List"
         self.tableView.layer.cornerRadius = 10.0
         self.tableView.layer.shadowColor = UIColor.gray.cgColor
@@ -28,10 +32,7 @@ class BanksListViewController: UIViewController, BanksListViewControllerProtocol
            self.navigationController?.navigationBar.standardAppearance = appearance
            self.navigationController?.navigationBar.scrollEdgeAppearance = appearance
            self.navigationController?.navigationBar.compactAppearance = appearance
-        self.presenter?.listBanks()
-        // Do any additional setup after loading the view.
     }
-
     func reloadTable() {
         self.tableView.reloadData()
     }
@@ -51,6 +52,14 @@ extension BanksListViewController: UITableViewDataSource {
             return cell
         } else {
             return UITableViewCell()
+        }
+    }
+}
+extension BanksListViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let bankInfo = self.presenter?.banks?[indexPath.row],
+           let url = URL(string: bankInfo.url) {
+            UIApplication.shared.open(url)
         }
     }
 }
