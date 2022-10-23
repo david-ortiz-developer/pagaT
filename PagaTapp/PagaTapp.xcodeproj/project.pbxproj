@@ -33,6 +33,9 @@
 		6205E9B62904E83500930F16 /* BankObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6205E9B52904E83500930F16 /* BankObject.swift */; };
 		6205E9B72904E83500930F16 /* BankObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6205E9B52904E83500930F16 /* BankObject.swift */; };
 		6205E9B82904E83500930F16 /* BankObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6205E9B52904E83500930F16 /* BankObject.swift */; };
+		6205E9BC2904EF8400930F16 /* BankListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6205E9BB2904EF8400930F16 /* BankListProtocols.swift */; };
+		6205E9BD2904EF8400930F16 /* BankListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6205E9BB2904EF8400930F16 /* BankListProtocols.swift */; };
+		6205E9BE2904EF8400930F16 /* BankListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6205E9BB2904EF8400930F16 /* BankListProtocols.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +74,7 @@
 		6205E9A92904DF8900930F16 /* BanksListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BanksListPresenter.swift; sourceTree = "<group>"; };
 		6205E9AD2904E05100930F16 /* BanksListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BanksListInteractor.swift; sourceTree = "<group>"; };
 		6205E9B52904E83500930F16 /* BankObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankObject.swift; sourceTree = "<group>"; };
+		6205E9BB2904EF8400930F16 /* BankListProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankListProtocols.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +166,7 @@
 				6205E9AD2904E05100930F16 /* BanksListInteractor.swift */,
 				6205E9A92904DF8900930F16 /* BanksListPresenter.swift */,
 				6205E9952904D8D500930F16 /* BanksListRouter.swift */,
+				6205E9BB2904EF8400930F16 /* BankListProtocols.swift */,
 			);
 			path = BanksList;
 			sourceTree = "<group>";
@@ -343,6 +348,7 @@
 				6205E9A22904DE6F00930F16 /* BanksListViewController.swift in Sources */,
 				6205E9AA2904DF8900930F16 /* BanksListPresenter.swift in Sources */,
 				6205E9682904CED400930F16 /* SceneDelegate.swift in Sources */,
+				6205E9BC2904EF8400930F16 /* BankListProtocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +359,7 @@
 				6205E9972904D8D500930F16 /* BanksListRouter.swift in Sources */,
 				6205E9AF2904E05100930F16 /* BanksListInteractor.swift in Sources */,
 				6205E97D2904CED600930F16 /* PagaTappTests.swift in Sources */,
+				6205E9BD2904EF8400930F16 /* BankListProtocols.swift in Sources */,
 				6205E9AB2904DF8900930F16 /* BanksListPresenter.swift in Sources */,
 				6205E9B72904E83500930F16 /* BankObject.swift in Sources */,
 				6205E9A32904DE6F00930F16 /* BanksListViewController.swift in Sources */,
@@ -370,6 +377,7 @@
 				6205E9982904D8D500930F16 /* BanksListRouter.swift in Sources */,
 				6205E9A42904DE6F00930F16 /* BanksListViewController.swift in Sources */,
 				6205E9872904CED600930F16 /* PagaTappUITests.swift in Sources */,
+				6205E9BE2904EF8400930F16 /* BankListProtocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

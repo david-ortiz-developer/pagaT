@@ -6,9 +6,6 @@
 //
 
 import UIKit
-protocol BanksListViewControllerProtocol {
-    var presenter: BanksListPresenterProtocol? {get set}
-}
 class BanksListViewController: UIViewController, BanksListViewControllerProtocol {
     var presenter: BanksListPresenterProtocol?
 

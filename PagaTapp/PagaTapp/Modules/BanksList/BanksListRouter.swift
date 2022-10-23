@@ -6,9 +6,6 @@
 //
 
 import UIKit
-protocol BanksListRouterProtocol {
-    
-}
 
 class BanksListRouter: BanksListRouterProtocol {
     static func createBanksistView() -> BanksListViewController {

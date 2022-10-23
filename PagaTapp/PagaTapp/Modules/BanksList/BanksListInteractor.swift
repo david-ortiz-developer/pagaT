@@ -6,10 +6,6 @@
 //
 
 import Foundation
-protocol BanksListInteractorProtocol {
-    var presenter: BanksListPresenterProtocol? {get set}
-    func loadBanks(completion: @escaping ([BankObject]?) -> Void)
-}
 class BanksListInteractor: BanksListInteractorProtocol {
     var presenter: BanksListPresenterProtocol?
      func loadBanks(
