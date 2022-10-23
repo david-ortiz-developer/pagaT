@@ -14,10 +14,10 @@ class BanksListViewController: UIViewController, BanksListViewControllerProtocol
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Banks List"
         self.presenter?.listBanks()
         // Do any additional setup after loading the view.
     }
-    
 
     func reloadTable() {
         self.tableView.reloadData()

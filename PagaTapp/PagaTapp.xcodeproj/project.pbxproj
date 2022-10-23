@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		6205E9662904CED400930F16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6205E9652904CED400930F16 /* AppDelegate.swift */; };
 		6205E9682904CED400930F16 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6205E9672904CED400930F16 /* SceneDelegate.swift */; };
-		6205E96D2904CED400930F16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6205E96B2904CED400930F16 /* Main.storyboard */; };
 		6205E96F2904CED600930F16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6205E96E2904CED600930F16 /* Assets.xcassets */; };
 		6205E9722904CED600930F16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6205E9702904CED600930F16 /* LaunchScreen.storyboard */; };
 		6205E97D2904CED600930F16 /* PagaTappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6205E97C2904CED600930F16 /* PagaTappTests.swift */; };
@@ -36,6 +35,10 @@
 		6205E9BC2904EF8400930F16 /* BankListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6205E9BB2904EF8400930F16 /* BankListProtocols.swift */; };
 		6205E9BD2904EF8400930F16 /* BankListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6205E9BB2904EF8400930F16 /* BankListProtocols.swift */; };
 		6205E9BE2904EF8400930F16 /* BankListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6205E9BB2904EF8400930F16 /* BankListProtocols.swift */; };
+		625B6E13290563D70002D667 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 625B6E11290563D70002D667 /* Main.storyboard */; };
+		625B6E18290567A70002D667 /* PagaTModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 625B6E16290567A70002D667 /* PagaTModel.xcdatamodeld */; };
+		625B6E19290567A70002D667 /* PagaTModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 625B6E16290567A70002D667 /* PagaTModel.xcdatamodeld */; };
+		625B6E1A290567A70002D667 /* PagaTModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 625B6E16290567A70002D667 /* PagaTModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,7 +62,6 @@
 		6205E9622904CED400930F16 /* PagaTapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PagaTapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6205E9652904CED400930F16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6205E9672904CED400930F16 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6205E96C2904CED400930F16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6205E96E2904CED600930F16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6205E9712904CED600930F16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6205E9732904CED600930F16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -75,6 +77,8 @@
 		6205E9AD2904E05100930F16 /* BanksListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BanksListInteractor.swift; sourceTree = "<group>"; };
 		6205E9B52904E83500930F16 /* BankObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankObject.swift; sourceTree = "<group>"; };
 		6205E9BB2904EF8400930F16 /* BankListProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankListProtocols.swift; sourceTree = "<group>"; };
+		625B6E12290563D70002D667 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		625B6E17290567A70002D667 /* PagaTModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PagaTModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,7 +187,8 @@
 		6205E9B42904E7F500930F16 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				6205E9B52904E83500930F16 /* BankObject.swift */,
+				625B6E152905677A0002D667 /* Model */,
+				625B6E142905676C0002D667 /* Banks */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -191,8 +196,8 @@
 		6205E9B92904E8C300930F16 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				625B6E11290563D70002D667 /* Main.storyboard */,
 				6205E9702904CED600930F16 /* LaunchScreen.storyboard */,
-				6205E96B2904CED400930F16 /* Main.storyboard */,
 				6205E9652904CED400930F16 /* AppDelegate.swift */,
 				6205E9672904CED400930F16 /* SceneDelegate.swift */,
 			);
@@ -205,6 +210,22 @@
 				6205E96E2904CED600930F16 /* Assets.xcassets */,
 			);
 			path = Resurces;
+			sourceTree = "<group>";
+		};
+		625B6E142905676C0002D667 /* Banks */ = {
+			isa = PBXGroup;
+			children = (
+				6205E9B52904E83500930F16 /* BankObject.swift */,
+			);
+			path = Banks;
+			sourceTree = "<group>";
+		};
+		625B6E152905677A0002D667 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				625B6E16290567A70002D667 /* PagaTModel.xcdatamodeld */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,8 +334,8 @@
 			files = (
 				6205E9722904CED600930F16 /* LaunchScreen.storyboard in Resources */,
 				6205E96F2904CED600930F16 /* Assets.xcassets in Resources */,
-				6205E96D2904CED400930F16 /* Main.storyboard in Resources */,
 				6205E9A62904DE8C00930F16 /* BanksListViewController.storyboard in Resources */,
+				625B6E13290563D70002D667 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +368,7 @@
 				6205E9B62904E83500930F16 /* BankObject.swift in Sources */,
 				6205E9A22904DE6F00930F16 /* BanksListViewController.swift in Sources */,
 				6205E9AA2904DF8900930F16 /* BanksListPresenter.swift in Sources */,
+				625B6E18290567A70002D667 /* PagaTModel.xcdatamodeld in Sources */,
 				6205E9682904CED400930F16 /* SceneDelegate.swift in Sources */,
 				6205E9BC2904EF8400930F16 /* BankListProtocols.swift in Sources */,
 			);
@@ -361,6 +383,7 @@
 				6205E97D2904CED600930F16 /* PagaTappTests.swift in Sources */,
 				6205E9BD2904EF8400930F16 /* BankListProtocols.swift in Sources */,
 				6205E9AB2904DF8900930F16 /* BanksListPresenter.swift in Sources */,
+				625B6E19290567A70002D667 /* PagaTModel.xcdatamodeld in Sources */,
 				6205E9B72904E83500930F16 /* BankObject.swift in Sources */,
 				6205E9A32904DE6F00930F16 /* BanksListViewController.swift in Sources */,
 			);
@@ -376,6 +399,7 @@
 				6205E9B82904E83500930F16 /* BankObject.swift in Sources */,
 				6205E9982904D8D500930F16 /* BanksListRouter.swift in Sources */,
 				6205E9A42904DE6F00930F16 /* BanksListViewController.swift in Sources */,
+				625B6E1A290567A70002D667 /* PagaTModel.xcdatamodeld in Sources */,
 				6205E9872904CED600930F16 /* PagaTappUITests.swift in Sources */,
 				6205E9BE2904EF8400930F16 /* BankListProtocols.swift in Sources */,
 			);
@@ -397,20 +421,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		6205E96B2904CED400930F16 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6205E96C2904CED400930F16 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		6205E9702904CED600930F16 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				6205E9712904CED600930F16 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		625B6E11290563D70002D667 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				625B6E12290563D70002D667 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -702,6 +726,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		625B6E16290567A70002D667 /* PagaTModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				625B6E17290567A70002D667 /* PagaTModel.xcdatamodel */,
+			);
+			currentVersion = 625B6E17290567A70002D667 /* PagaTModel.xcdatamodel */;
+			path = PagaTModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 6205E95A2904CED400930F16 /* Project object */;
 }

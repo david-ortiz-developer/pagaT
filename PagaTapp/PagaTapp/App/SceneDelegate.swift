@@ -16,7 +16,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         if let windowScene = scene as? UIWindowScene {
             let banksList = BanksListRouter.createBanksListView()
                let window = UIWindow(windowScene: windowScene)
-               window.rootViewController = banksList
+               window.rootViewController = UINavigationController(rootViewController: banksList) 
                self.window = window
                window.makeKeyAndVisible()
            }
