@@ -15,6 +15,19 @@ class BanksListViewController: UIViewController, BanksListViewControllerProtocol
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Banks List"
+        self.tableView.layer.cornerRadius = 10.0
+        self.tableView.layer.shadowColor = UIColor.gray.cgColor
+        self.tableView.layer.shadowOffset = CGSize(width: 1.0, height: 1.0)
+          self.tableView.layer.shadowOpacity = 0.4
+          self.tableView.layer.shadowRadius = 5.0
+          self.tableView.clipsToBounds = true
+          self.tableView.layer.masksToBounds = true
+        
+        let appearance = UINavigationBarAppearance()
+           appearance.configureWithTransparentBackground()
+           self.navigationController?.navigationBar.standardAppearance = appearance
+           self.navigationController?.navigationBar.scrollEdgeAppearance = appearance
+           self.navigationController?.navigationBar.compactAppearance = appearance
         self.presenter?.listBanks()
         // Do any additional setup after loading the view.
     }
@@ -30,10 +43,14 @@ extension BanksListViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
-        if let bankInfo = self.presenter?.banks?[indexPath.row] {
-            cell.textLabel?.text  = bankInfo.bankName
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "bankCell", for: indexPath) as? BanksTableViewCell,
+           let bankInfo = self.presenter?.banks?[indexPath.row] {
+            cell.nameLabel.text = bankInfo.bankName
+            cell.descriptionLabel.text = bankInfo.description
+            cell.yearsLabel.text = "\(bankInfo.age) años"
+            return cell
+        } else {
+            return UITableViewCell()
         }
-        return cell
     }
 }
