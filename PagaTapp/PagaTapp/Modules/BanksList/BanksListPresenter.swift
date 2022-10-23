@@ -5,7 +5,7 @@
 //  Created by edgar david ortiz diaz on 22/10/22.
 //
 
-import Foundation
+import UIKit
 class BanksListPresenter: BanksListPresenterProtocol {
     var interactor: BanksListInteractorProtocol?
     var router: BanksListRouterProtocol?
