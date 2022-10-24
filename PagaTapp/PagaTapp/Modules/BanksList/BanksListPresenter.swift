@@ -13,6 +13,7 @@ class BanksListPresenter: BanksListPresenterProtocol {
     var banks: BankObjects?
     
     func listBanks() {
+        self.view?.showLoader()
         self.interactor?.loadBanks { result in
             if let banks = result {
                 self.banks = banks
@@ -20,6 +21,7 @@ class BanksListPresenter: BanksListPresenterProtocol {
                     self.view?.reloadTable()
                 }
             }
+            self.view?.hideLoader()
         }
     }
 }

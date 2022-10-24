@@ -18,6 +18,8 @@ protocol BanksListViewControllerProtocol {
     var presenter: BanksListPresenterProtocol? {get set}
     
     func reloadTable()
+    func showLoader()
+    func hideLoader()
 }
 protocol BanksListInteractorProtocol {
     var presenter: BanksListPresenterProtocol? {get set}
