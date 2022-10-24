@@ -25,13 +25,10 @@ class PagaTappUITests: XCTestCase {
     func testTouch() throws {
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
-        app.activate()
+        app.launch()
         let tablesQuery = XCUIApplication().tables
         tablesQuery/*@START_MENU_TOKEN@*/.cells.containing(.staticText, identifier:"BBVA Bancomer").element/*[[".cells.containing(.staticText, identifier:\"BBVA Bancomer Creando Oportunidades\").element",".cells.containing(.staticText, identifier:\"11 años\").element",".cells.containing(.staticText, identifier:\"BBVA Bancomer\").element"],[[[-1,2],[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.swipeUp()
         tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["5 años"]/*[[".cells.staticTexts[\"5 años\"]",".staticTexts[\"5 años\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
-        app.launch()
-
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
 
     func testLaunchPerformance() throws {
