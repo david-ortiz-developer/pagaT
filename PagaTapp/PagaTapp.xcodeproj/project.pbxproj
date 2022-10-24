@@ -42,6 +42,8 @@
 		62D440E42905BA2C008993B4 /* BanksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D440E32905BA2C008993B4 /* BanksTableViewCell.swift */; };
 		62D440E52905BA2C008993B4 /* BanksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D440E32905BA2C008993B4 /* BanksTableViewCell.swift */; };
 		62D440E62905BA2C008993B4 /* BanksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D440E32905BA2C008993B4 /* BanksTableViewCell.swift */; };
+		62D440ED2906D657008993B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6205E9652904CED400930F16 /* AppDelegate.swift */; };
+		62D440EE2906D657008993B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6205E9652904CED400930F16 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -409,6 +411,7 @@
 				6205E9AB2904DF8900930F16 /* BanksListPresenter.swift in Sources */,
 				625B6E19290567A70002D667 /* PagaTModel.xcdatamodeld in Sources */,
 				6205E9B72904E83500930F16 /* BankObject.swift in Sources */,
+				62D440ED2906D657008993B4 /* AppDelegate.swift in Sources */,
 				6205E9A32904DE6F00930F16 /* BanksListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -417,6 +420,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62D440EE2906D657008993B4 /* AppDelegate.swift in Sources */,
 				6205E9B02904E05100930F16 /* BanksListInteractor.swift in Sources */,
 				6205E9AC2904DF8900930F16 /* BanksListPresenter.swift in Sources */,
 				6205E9892904CED600930F16 /* PagaTappUITestsLaunchTests.swift in Sources */,
